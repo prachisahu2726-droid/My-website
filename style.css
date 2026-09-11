@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: radial-gradient(circle, #1a2639 0%, #111823 100%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #162235;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    color: #4ed9ff;
+    text-transform: uppercase;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    color: #a0aec0;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    background: #0f172a;
+    border: 1px solid #2d3748;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #4ed9ff;
+    box-shadow: 0 0 8px rgba(78, 217, 255, 0.2);
+}
+
+.ai-status-box {
+    margin: 15px 0;
+    padding: 10px;
+    background: rgba(78, 217, 255, 0.1);
+    border-radius: 8px;
+    font-size: 13px;
+    color: #4ed9ff;
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #00b4db, #0083b0);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    filter: brightness(1.2);
+}
+
+/* Result Box Styling */
+.result-card {
+    margin-top: 20px;
+    background: #0f172a;
+    border-left: 5px solid #4ed9ff;
+    padding: 15px;
+    border-radius: 0 8px 8px 0;
+    text-align: left;
+}
+
+.result-card h3 {
+    color: #4ed9ff;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.result-card p {
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #cbd5e1;
+}
