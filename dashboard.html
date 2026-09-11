@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Grievance Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" style="width: 500px;">
+        <h2>AI Grievance Portal</h2>
+        <p style="color: #a0aec0; margin-bottom: 20px; font-size: 14px;">Submit Grievance Details</p>
+
+        <div class="input-group">
+            <label>Contact Number</label>
+            <input type="text" id="contact" placeholder="Enter mobile number">
+        </div>
+
+        <div class="input-group">
+            <label>Select City</label>
+            <select id="portal-city">
+                <option value="Bhopal">Bhopal</option>
+                <option value="Indore">Indore</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Gwalior">Gwalior</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Full Address</label>
+            <input type="text" id="address" placeholder="House No, Colony, Area...">
+        </div>
+
+        <div class="input-group">
+            <label>Describe your Complaint</label>
+            <textarea id="complaint" rows="4" placeholder="What is the issue? (e.g., No water supply since 2 days)"></textarea>
+        </div>
+
+        <button class="btn" id="submitGrievanceBtn">Analyze & Submit</button>
+
+        <div id="ai-result-container" style="display: none;">
+            <div class="result-card">
+                <h3 id="res-dept">Target: Loading...</h3>
+                <p id="res-status">Status: Processing...</p>
+                <p id="res-meta">Contact: -- | Locality: --</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
